@@ -16,36 +16,36 @@ abstract class Vehicle {
     }
 
     public void move(String pointA, String pointB){
-        System.out.println(this.name + "is moving from" + pointA + "to"+ pointB);
+        System.out.println(this.name + " is moving from" + pointA + "to"+ pointB);
     }
 
     public void move() {
-        System.out.println(this.name + "is moving.");
+        System.out.println(this.name + " is moving.");
     }
 
     public void getPushed(Object obj) {
-        System.out.println(this.name + "is being pushed by " + obj + ".");
+        System.out.println(this.name + " is being pushed by " + obj + ".");
         this.move();
     }
 
     public void getPulled(Object obj) {
 
-        System.out.println(this.name + "is being pulled by " + obj + ".");
+        System.out.println(this.name + " is being pulled by " + obj + ".");
         this.move();
     }
 
     public void accelerate() {
-        System.out.println(this.name + "is accelerating.");
+        System.out.println(this.name + " is accelerating.");
         this.move();
     }
 
     public void slowDown() {
-        System.out.println(this.name + "is slowing down.");
+        System.out.println(this.name + " is slowing down.");
     }
 
     public void stop() {
         this.slowDown();
-        System.out.println(this.name + "is halt.");
+        System.out.println(this.name + " is halt.");
     }
 
     @Override
